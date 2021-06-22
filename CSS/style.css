@@ -1,0 +1,286 @@
+body{
+    background-color: teal;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+  }
+  *{
+    box-sizing: border-box;
+  }
+.fa-bars{
+  display: none;
+}
+.closebtn{
+  display: none;
+}
+  header{
+    display: flex;
+    justify-content: space-between;
+    background-color: teal;
+    /*width: 100vw;*/
+   
+  }
+  h1{
+    margin:.5em;
+    text-transform: uppercase;
+    font-family: 'Lobster',cursive;
+    color: white;
+  }
+  h2{
+    color: white;
+    text-align: center;
+    font-size: 180%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+  }
+  li{
+    list-style: none;
+    display: inline;
+    padding: 2em;
+    font-size: 1.2em;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: 'Lobster', cursive;
+    font-weight: 700;
+    color: white;
+  }
+  a{
+    text-decoration: none;
+    color: white;
+  }
+  p{
+    font-family: 'Manrope', sans-serif;
+    line-height: 1.5em;
+    margin-top: 0;
+  }
+  nav a:hover{
+    color: #000000;
+  }
+  #floated-span{
+    float: right;
+    width: 680px;
+   font-size: 150%;
+    color: white;
+  
+    margin: 2em auto;
+  }
+  
+  /*.calltoAction{
+    margin: 0 1em;
+    display: block;
+    margin: 0 auto;
+  }*/
+  .mobileimg{
+    display: none;
+  }
+.backgrounded{
+  background-image: url(../img/cakebackground.jpg);
+  background-repeat: no-repeat;
+  background-size: 100% ;
+ /* background-attachment: scroll;
+ /* width: 100vw;*/
+  height: 90vh;
+  margin-bottom: 10px;
+ /* position: relative;*/
+}
+.backgrounded-text{
+  color: black;
+  font-family: 'Manrope', sans-serif;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 250%;
+  font-weight: bold;
+  margin: 0 0;
+  margin-bottom: 0;
+  position: absolute;
+  right: 75px;
+  top: 30%;
+  bottom: 50%;
+}
+.backgrounded-text2{
+  font-size: 150%;
+  font-family: 'Manrope', sans-serif;
+  text-align: center;
+  margin-top: 0;
+  position: absolute;
+  top:38.5% ;
+  right: 75px;
+  bottom: 50%;
+}
+#callToAction{
+  position: absolute;
+  top: 45%;
+  right: 100px;
+  bottom: 50%;
+  width: 400px;
+  height: 60px;
+  color: white;
+  border: none;
+  border-radius: 15px;
+  font-family:'Manrope', sans-serif ;
+  text-transform: uppercase;
+  font-weight: 900;
+  font-size: 150%;
+  background-image: linear-gradient(teal, lightseagreen);
+}
+#callToAction:hover , #CallToAction:active ,.callToAction2:hover , .callToAction2:active{
+  color: #000000;
+  background-image: none;
+  font-family: 'Lobster',cursive;
+}
+.callToAction2{
+  display: block;
+  margin: 1em auto;
+  width: 250px;
+  height: 60px;
+  color: white;
+  border: none;
+  /*border-radius: 15px;*/
+  font-family:'Manrope', sans-serif ;
+  text-transform: uppercase;
+  font-weight: 900;
+  font-size: 130%;
+  background-image: linear-gradient(teal, lightseagreen);
+  
+}
+.majorProjectContainer{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+.pricingContainer{
+  margin: 1em;
+ /* background-color: #dddfe0;*/
+
+  background-color:#dddee0;
+  width: 30vw;
+  height: auto;
+  /*position: relative;*/
+  border: 2px solid rgba(255, 255, 255, .5);
+  border-radius: 10px;
+}
+.pringImage{
+   width: 20vw;
+   height: 250px;
+   display: block;
+   margin: 1em auto;
+}
+p.pricingDescr{
+  font-family: 'Lobster',cursive;
+  color: #000000;
+  font-weight: 900;
+  text-align: center;
+  font-size: 190%;
+  letter-spacing: .5em;
+  margin-top: .6em;
+  letter-spacing: .1em;
+  /*border-top: 1.5px solid lightseagreen;
+  border-bottom:1.5px solid lightseagreen ;*/
+}
+.lessCarePara{
+  font-size: 80%;
+  letter-spacing: .1em;
+  font-style: italic;
+  padding: 1em;
+  text-align: justify;
+  
+}
+.lessCarePara span{
+  font-style: normal;
+  font-weight: 900;
+  font-size: 110%;
+}
+#productsH2{
+  /*position: sticky;*/
+  text-transform: uppercase;
+  
+}
+@media (max-width: 700px) and (min-width:300px ){
+  body{
+    width: 100vw;
+  }
+  .fa-bars{
+    display: block;
+    margin-top: .6em;
+    margin-right: 1em;
+  }
+  .mobileimg{
+    display: block;
+    width:98vw;
+    height: 450px;
+  }
+  .pageLogo{
+    font-size: 100%;
+  }
+  .backgrounded{
+    background-image:none ;
+  }
+  .header-nav li, .closebtn{
+    display: block;
+  }
+  .closebtn{
+    position: absolute;
+    margin: 1em;
+    font-size: 170%;
+    right: 0;
+  }
+  .header-nav {
+    font-size: 100%;
+    display: none;
+  }
+  .backgrounded-text{
+  color: black;
+  font-family: 'Manrope', sans-serif;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 100%;
+  font-weight: bold;
+  margin-bottom: 0;
+  margin-top: 1em;
+  font-size: 150%;
+  position: static;
+}
+  .backgrounded-text2{
+  position: static;
+  font-size: 75%;
+  font-family: 'Manrope', sans-serif;
+  text-align: center;
+  margin-bottom: 2em;
+}
+.majorProjectContainer{
+  display: block;
+
+}
+.pricingContainer{
+  display: block;
+  margin: 1em auto;
+  width: 85%;
+  height: auto;
+
+}
+
+.pringImage{
+   width: 50vw;
+   height: 250px;
+   display: block;
+   margin: 1em auto;
+}
+#callToAction{
+  display: block;
+  width: 200px;
+  font-size: 90%;
+  position: static;
+ /* margin: 0 5em;*/
+ margin: 1.5em auto;
+}
+#productsH2{
+  margin-top: 1.5em;
+}
+h2{
+  font-size: 120%;
+}
+.callToAction2{
+  width: 200px;
+}
+/*.header-nav li{
+  display: block;
+}*/
+}
